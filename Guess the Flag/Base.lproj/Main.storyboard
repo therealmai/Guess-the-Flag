@@ -16,38 +16,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6W8-Zo-99j">
-                                <rect key="frame" x="83" y="144" width="224" height="114"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="us"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BaK-nM-QFo">
+                                <rect key="frame" x="95" y="155" width="200" height="100"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="estonia"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XqQ-Sb-g8w">
-                                <rect key="frame" x="83" y="343" width="224" height="114"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="russia"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CzN-Nn-CS5">
+                                <rect key="frame" x="95" y="515" width="200" height="100"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="estonia"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzm-aX-nsp">
-                                <rect key="frame" x="83" y="528" width="224" height="114"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="germany"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDg-Ky-4na">
+                                <rect key="frame" x="95" y="330" width="200" height="100"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="estonia"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6W8-Zo-99j" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="10r-Gd-Eu1"/>
-                            <constraint firstItem="6W8-Zo-99j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="3ZE-Rh-paf"/>
-                            <constraint firstItem="XqQ-Sb-g8w" firstAttribute="centerX" secondItem="6W8-Zo-99j" secondAttribute="centerX" id="Obq-cY-4eF"/>
-                            <constraint firstItem="kzm-aX-nsp" firstAttribute="centerX" secondItem="XqQ-Sb-g8w" secondAttribute="centerX" id="YoK-XJ-M3j"/>
-                            <constraint firstItem="XqQ-Sb-g8w" firstAttribute="top" secondItem="6W8-Zo-99j" secondAttribute="bottom" constant="85" id="hw9-v3-Zph"/>
-                            <constraint firstItem="kzm-aX-nsp" firstAttribute="top" secondItem="XqQ-Sb-g8w" secondAttribute="bottom" constant="71" id="sUN-MM-icJ"/>
+                            <constraint firstItem="sDg-Ky-4na" firstAttribute="centerX" secondItem="BaK-nM-QFo" secondAttribute="centerX" id="Kkz-ts-1l7"/>
+                            <constraint firstItem="BaK-nM-QFo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="a8F-tq-idX"/>
+                            <constraint firstItem="CzN-Nn-CS5" firstAttribute="centerX" secondItem="sDg-Ky-4na" secondAttribute="centerX" id="b8i-Oh-2Nr"/>
+                            <constraint firstItem="sDg-Ky-4na" firstAttribute="top" secondItem="BaK-nM-QFo" secondAttribute="bottom" constant="69" id="lhu-mB-kYi"/>
+                            <constraint firstItem="CzN-Nn-CS5" firstAttribute="top" secondItem="sDg-Ky-4na" secondAttribute="bottom" constant="91" id="mOd-Wp-zoZ"/>
+                            <constraint firstItem="BaK-nM-QFo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rQP-p2-lLE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="N7I-fD-Z0n"/>
                     <connections>
-                        <outlet property="button1" destination="6W8-Zo-99j" id="o3E-Hr-CtA"/>
-                        <outlet property="button2" destination="XqQ-Sb-g8w" id="Vtv-cm-BWq"/>
-                        <outlet property="button3" destination="kzm-aX-nsp" id="Wfu-kA-B6A"/>
+                        <outlet property="button1" destination="BaK-nM-QFo" id="7Lx-G5-7K7"/>
+                        <outlet property="button2" destination="sDg-Ky-4na" id="su2-6T-vfH"/>
+                        <outlet property="button3" destination="CzN-Nn-CS5" id="UiD-8i-Q3Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -74,9 +74,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="germany" width="200" height="100"/>
-        <image name="russia" width="200" height="100"/>
-        <image name="us" width="200" height="100"/>
+        <image name="estonia" width="200" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
