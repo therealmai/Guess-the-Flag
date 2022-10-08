@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet var button1: UIButton!
     @IBOutlet var button2: UIButton!
     @IBOutlet var button3: UIButton!
+    @IBOutlet var scoreLabel: UILabel!
     
     var countries = [String]();
     var correctAnswer = 0
@@ -40,7 +41,7 @@ class ViewController: UIViewController {
         button2.setImage(UIImage(named: countries[1]), for: .normal)
         button3.setImage(UIImage(named: countries[2]), for: .normal)
         
-        title = countries[correctAnswer].uppercased()
+        updateTitles()
     }
 
     @IBAction func buttonTapped(_ sender: UIButton) {
@@ -60,5 +61,9 @@ class ViewController: UIViewController {
         present(ac, animated: true);
     }
     
+    func updateTitles(){
+        title = countries[correctAnswer].uppercased()
+        scoreLabel.text = "Score: \(score)"
+    }
 }
 
