@@ -13,10 +13,12 @@ class ViewController: UIViewController {
     @IBOutlet var button2: UIButton!
     @IBOutlet var button3: UIButton!
     @IBOutlet var scoreLabel: UILabel!
+    @IBOutlet var questionNumberLabel: UILabel!
     
     var countries = [String]();
     var correctAnswer = 0
     var score = 0;
+    var number = 0;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +42,12 @@ class ViewController: UIViewController {
         button1.setImage(UIImage(named: countries[0]), for: .normal)
         button2.setImage(UIImage(named: countries[1]), for: .normal)
         button3.setImage(UIImage(named: countries[2]), for: .normal)
+        number += 1;
         
+        if(number > 10){
+            showResult()
+            return
+        }
         updateTitles()
     }
 
@@ -55,15 +62,27 @@ class ViewController: UIViewController {
         }
         
         let ac = UIAlertController(title: title, message: "Your score is \(score)", preferredStyle: .alert)
-        
+            
         ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
-        
+            
         present(ac, animated: true);
     }
     
     func updateTitles(){
         title = countries[correctAnswer].uppercased()
         scoreLabel.text = "Score: \(score)"
+        questionNumberLabel.text = "Number: \(number)/10"
     }
+    
+    func showResult(){
+        let sc = UIAlertController(title: "End of the game", message: "Your score is \(score)", preferredStyle: .alert)
+        sc.addAction(UIAlertAction(title: "Restart Game", style: .default, handler: askQuestion))
+        present(sc,animated: true);
+        score = 0
+        number = 0
+        correctAnswer = 0
+    }
+    
 }
+
 

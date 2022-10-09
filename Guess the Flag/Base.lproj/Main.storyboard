@@ -46,11 +46,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvM-5r-llv">
+                                <rect key="frame" x="164" y="91" width="62" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="sDg-Ky-4na" firstAttribute="centerX" secondItem="BaK-nM-QFo" secondAttribute="centerX" id="Kkz-ts-1l7"/>
+                            <constraint firstItem="wvM-5r-llv" firstAttribute="centerX" secondItem="BaK-nM-QFo" secondAttribute="centerX" id="OyM-dN-LGv"/>
+                            <constraint firstItem="BaK-nM-QFo" firstAttribute="top" secondItem="wvM-5r-llv" secondAttribute="bottom" constant="35" id="YPw-bW-45v"/>
                             <constraint firstItem="BaK-nM-QFo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="a8F-tq-idX"/>
                             <constraint firstItem="Zi0-CY-Xw8" firstAttribute="centerX" secondItem="CzN-Nn-CS5" secondAttribute="centerX" id="ahQ-Sd-vYp"/>
                             <constraint firstItem="CzN-Nn-CS5" firstAttribute="centerX" secondItem="sDg-Ky-4na" secondAttribute="centerX" id="b8i-Oh-2Nr"/>
@@ -65,6 +73,7 @@
                         <outlet property="button1" destination="BaK-nM-QFo" id="7Lx-G5-7K7"/>
                         <outlet property="button2" destination="sDg-Ky-4na" id="su2-6T-vfH"/>
                         <outlet property="button3" destination="CzN-Nn-CS5" id="UiD-8i-Q3Y"/>
+                        <outlet property="questionNumberLabel" destination="wvM-5r-llv" id="dMC-lt-3lT"/>
                         <outlet property="scoreLabel" destination="Zi0-CY-Xw8" id="dLw-PH-ie9"/>
                     </connections>
                 </viewController>
